@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/stylesheet.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>HOME PAGE-THE LAST REPORTER</title>
+</head>
+<body>
+
+<!---HEADER AND LOGO
+<div class="logo-container">
+  <div class="logo">   
+    <nav class="mt-5 navbar-expand-lg bg-body-tertiary">
+    <a class="navbar-brand" href="#">
+    <img src="/IMAGES/the last reporter_LOGO.png" class="logo-container" alt="logo">
+    </a>
+  </div>
+</div>--->
+
+<!---DONATE BUTTON AND LINK-->
+<div class="donate-container">
+  DONATE & SUPPORT US
+  <div class="donate">
+        <form method="POST" action="https://mainnet.demo.btcpayserver.org/api/v1/invoices" class="btcpay-form btcpay-form--block">
+          <input type="hidden" name="storeId" value="Fgx6m5CjL85g9RwaFXoVLXr6uHTSfv3u9rTXQ43Diykh" />
+          <input type="hidden" name="currency" value="USD" />
+          <input type="image" class="submit" name="submit" src="https://mainnet.demo.btcpayserver.org/img/paybutton/pay.svg" style="width:150px;" alt="Pay with BTCPay Server, a Self-Hosted Bitcoin Payment Processor">
+        </form>
+  </div>
+</div>
+
+<!---NAVBAR-->
+<header>
+  <div class="navbar">
+    <img src="/IMAGES/the last reporter_LOGO HORIZONTAL.png" alt="logo" class="nav-logo">
+
+    <button id="menu-btn">
+      =
+    </button>
+  </div>
+</header>
+
+<div id="mobileMenu" class="mobile-menu">
+  <button id="close-btn">x</button>
+
+  <a class="active" href="/WEBPAGES/Home test.html">Home</a>
+  <div class="dropdown">
+    <button class="dropdown-btn">
+      Cybersecurity News
+    </button>
+
+    <div class="dropdown-content">
+      <a href="#">1. Congress Makes Decisions...</a>
+      <a href="#">2. Trump Assaination Plot?!?</a>
+      <a href="#">3. Butt sex epedempic in St Louis!!!</a>
+    </div>
+  </div>
+
+  <a href="/WEBPAGES/WorldNews test.html">World News</a>
+
+  <a href="/WEBPAGES/Investigations test.html">Investigations</a>
+
+  <a href="/WEBPAGES/Sports.html">Sports</a>
+
+  <a href="/WEBPAGES/Fianace.html">Fianance</a>
+
+  <a href="/WEBPAGES/Entertainment.html">Entertainment</a>
+
+  <a href="/WEBPAGES/Medicene.html">Health & Science</a>
+
+  <a href="/WEBPAGES/Comics.html">Comics</a>
+
+  <a href="/WEBPAGES/Podcast.html">Podcast</a>
+
+  <a href="/WEBPAGES/Newsletter.html">Subscribe</a>
+
+  <a href="/WEBPAGES/Contact test.html">Contact</a>
+
+  <a href="/WEBPAGES/Store test2.html">Store</a>
+</div>
+<script src="/JAVA/dropdown.js"></script>
+
+<!------NASDAQ SCROLLER----->
+ <div class="scroller">
+  <div class="scroller-inner" data-content="">
+    <div class="scroller-item">Welcome to the Last Reporter here is the latest</div>
+    <div class="scroller-item"> | </div>
+    <div class="scroller-item">Body Found in Missisippi River identified as young woman missing for 2 months</div>
+     <div class="scroller-item"> | </div>
+    <div class="scroller-item">2 arressted in shooting death of robbery suspect outside Westfield Culver City mall</div>
+     <div class="scroller-item"> | </div>
+    <div class="scroller-item">FBI is increasing its reward up to $100,000 for information leading to the loaction of the Nancy Gunthrie suspect</div>
+     <div class="scroller-item"> | </div>
+    <div class="scroller-item">Is there a blackout order on Nancy Gunthrie?</div>
+     <div class="scroller-item"> | </div>
+    <div class="scroller-item">Arizona authories turn to gentic genealogy in ongoing search for Nancy Gunthrie</div>
+     <div class="scroller-item"> | </div>
+    <div class="scroller-item">Dread creator HugBunter offering reward for participating Dread user ONLY on the TOR Network</div>
+     <div class="scroller-item"> | </div>
+    <div class="scroller-item">Incognito Market creator Rui-Siang Lin was sentenced to 30 years </div>
+     <div class="scroller-item"> | </div>
+    <div class="scroller-item">Is the Government using AI to build a identity survellance machine.</div>
+     <div class="scroller-item"> | </div>
+    <div class="scroller-item">Nasdaq 12,000 </div>
+     <div class="scroller-item"> | </div>
+    <div class="scroller-item">S&P 500 4,000 </div>
+     <div class="scroller-item"> | </div>
+    <div class="scroller-item">Gold $1,800 </div>
+     <div class="scroller-item"> | </div>
+    <div class="scroller-item">Updates made every day after 12pm we do not offer trading advice.</div>
+  </div>
+ </div>
+</div>
+
+
+
+<!---Weather Widget-->
+<div class="weather-widget">
+
+    <div class="weather-location">
+        <h2 id="location">Loading...</h2>
+        <p id="condition"></p>
+    </div>
+
+    <div class="weather-main">
+        <img id="icon" src="">
+        <span id="temp">--°F</span>
+    </div>
+
+    <div class="weather-details">
+        <div>
+            <small>Feels Like</small>
+            <strong id="feelsLike"></strong>
+        </div>
+
+        <div>
+            <small>Humidity</small>
+            <strong id="humidity"></strong>
+        </div>
+
+        <div>
+            <small>Wind</small>
+            <strong id="wind"></strong>
+        </div>
+
+        <div>
+            <small>UV Index</small>
+            <strong id="uv"></strong>
+        </div>
+    </div>
+
+    <div id="forecast" class="forecast"></div>
+
+</div>
+<script src="/JAVA/weather.js"></script>
+
+<!---POLL---->
+<div class="poll-container">
+    <iframe
+        name="opinionstage-widget"
+        src="https://www.opinionstage.com/api/v2/widgets/6eb4befc-b631-4340-99b3-3d799d737615/iframe?em=1"
+        data-opinionstage-iframe="6eb4befc-b631-4340-99b3-3d799d737615"
+        width="100%"
+        height="800"
+        scrolling="auto"
+        style="border:none; box-shadow:0 0 12px rgba(0,0,0,0.25); border-radius:12px;"
+        frameborder="0"
+        allow="fullscreen"
+        webkitallowfullscreen
+        mozallowfullscreen
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</div>
+
+
+<!---Video-->
+<!---Logo-->
+    <div class="footer-logo">
+      <img src="/IMAGES/the last reporter_ICON.png" alt="Company Logo">
+    </div>
+
+<div class="mainheader-1">
+<header>
+        <h1 class="section-logo">THE LAST REPORTER TV</h1>      
+</header>
+</div>
+
+<!---VIDEO SECTION-->
+<selection class="hero-news">
+<div class="video-container">
+  <video 
+  loop 
+  autoplay
+  muted
+  playsinline
+  controls
+  width="100%"> 
+  <source src="#" type="video/mp4">
+
+  </video>
+</div>
+</selection>  
+
+<div class="subheader-1">
+<header>
+        <h2 class="logo">TOP HEADLINES</h2>      
+</header>
+</div>
+
+<!---BREAKING NEWS OR TOP STORIES---->
+<div class="container-1 center mt-5">
+  <div class="breaking-news">
+    <h5 class="center-card-title">BREAKING NEWS</h5>
+    <img src="/IMAGES/AA1xbOuY.jpg" class="card-img-top" alt="breaking">
+    
+    <p class="card-text">Congress has agreed to make FRT legal...</p>
+    <div class="card-text"><h1>By Willow Tohi</h1></div>
+     <div class="card-text"><h2>May 20, 2025 </h2></div>
+     <div class="card-text"><h5>In a landmark reversal of federal firearms policy, 
+      the Trump administration and Rare Breed Triggers (RBT) announced a settlement on May 16, 
+      to end a bitter legal battle over Forced Reset Triggers (FRTs), which the Biden administration had labeled “machine guns” under federal law.
+       The agreement, hailed by gun rights advocates as a “victory over unchecked government overreach,” 
+       resolves litigation spanning multiple circuits, overturns prior Bureau of Alcohol, Tobacco, Firearms and Explosives (ATF) 
+       rulings and restores lawfully owned FRTs to the marketplace. 
+       It underscores the Trump Department of Justice’s (DOJ) commitment to protecting constitutional rights, 
+       a stark contrast to the Biden administration’s efforts to expand regulatory authority under the ATF.</h5></div>
+      <li><a href="/WEBPAGES/Articles/2026/July/breakingNews/article1.html"><p class="card-text">READ MORE...</p></a></li>
+</div> 
+</div>
+
+<header>
+        <h1 class="logo">TRENDING ON THE INTERNET</h1>      
+</header>
+
+<!---TRENDING TOPIC /W LINKS-->
+<section class="trendng">
+  <h2>Trending Topics</h2>
+  <div class="news-list">
+    <a href="/WEBPAGES/Articles/2026/July/trending/article1.html" class="news-card">
+      <img src="#" alt="">
+      <div class="news-info">
+        <h3>2026 World Cup: How to watch all of today's games...</h3>
+        <p>July 12,2026</p>
+      </div>
+    </a>
+
+    <a href="/WEBPAGES/Articles/2026/July/trending/article2.html" class="news-card">
+      <img src="#" alt="">
+      <div class="new-info">
+        <h3>2 people killed in Toronto street festival shooting</h3>
+        <p>July 12,2026</p>
+      </div>
+    </a>
+
+    <a href="/WEBPAGES/Articles/2026/July/trending/article3.html" class="news-card">
+      <img src="#" alt="">
+      <div class="news-info">
+        <h3>Sen. Lindsey Granham dies at 71 after 'brief and sudden illness'</h3>
+        <p>July 12,2026</p>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<!---POLL SECTION-->
+<div class="poll-container">
+    <iframe
+        src="https://www.opinionstage.com/api/v2/widgets/705a6ed4-a8dc-4ea8-8275-9d6dbe8688d4/iframe?em=1"
+        width="100%"
+        height="500"
+        frameborder="0"
+        loading="lazy">
+    </iframe>
+</div>
+
+<!---FEATURED NEWS SECTION
+<header>
+        <h1 class="logo">TOP STORIES</h1>
+        <p>Here are the top featured stories from around The Last Reporter.</p>      
+</header>-->
+
+<header>
+        <h3 class="logo">Editorial Cartoons</h3>
+        <p>Enjoy comic strips provided by The Last Reporter.</p>
+</header>
+
+<!----RESPONSIVE CARD SLIDER-->
+ <div class="slider-container">
+  <button class="arrow left" onclick="changeSlide(-1)">&#10094;
+    &#10094;
+  </button>
+  <button class="arrow right" onclick="changeSlide(1)">&#10095;
+    &#10095;
+  </button>
+  <div class="slider">
+    <article class="card">
+      <img src="/IMAGES/AA1xbOuY.jpg" alt="...">
+      <div class="card-body">
+        <h5>Card Title 1</h5>
+        <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <p><small>Last updated 3 mins ago</small></p>
+      </div>
+    </article>
+
+    <article class="card">
+      <img src="/IMAGES/AA1xbOuY.jpg" alt="...">
+      <div class="card-body">
+        <h5>Card Title 2</h5>
+        <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <p><small>Last updated 3 mins ago</small></p>
+      </div>
+    </article>
+
+    <article class="card">
+      <img src="/IMAGES/AA1xbOuY.jpg" alt="...">
+      <div class="card-body">
+        <h5>Card Title 3</h5>
+        <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <p><small>Last updated 3 mins ago</small></p>
+      </div>
+    </article>
+
+    <article class="card">
+      <img src="/IMAGES/AA1xbOuY.jpg" alt="...">
+      <div class="card-body">
+        <h5>Card Title 4</h5>
+        <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <p><small>Last updated 3 mins ago</small></p>
+      </div>
+    </article>
+
+    <article class="card">
+      <img src="/IMAGES/AA1xbOuY.jpg" alt="...">
+      <div class="card-body">
+        <h5>Card Title 5</h5>
+        <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <p><small>Last updated 3 mins ago</small></p>
+      </div>
+    </article>
+  </div>
+ </div>
+
+<!-- Newsletter Banner -->
+<section class="newsletter1-banner">
+    <div class="newsletter1-content">
+        <div class="newsletter1-icon">
+            📧
+        </div>
+
+        <div class="newsletter1-text">
+            <h2>Never Miss Breaking News</h2>
+            <p>
+                Get the latest sports, world news, entertainment, and exclusive stories
+                delivered straight to your inbox.
+            </p>
+        </div>
+
+        <a href="/WEBPAGES/Newsletter.html" class="newsletter1-btn">
+            Subscribe Now →
+        </a>
+    </div>
+</section>
+
+<!-- Movie Review Section -->
+<section class="movie-reviews">
+
+    <div class="section-title">
+        <h2>🎬 Current Movie Review</h2>
+        <p>Honest reviews of the newest films. Find out more at <a href="/WEBPAGES/Entertainment.html">our reviews page</a>.</p>
+    </div>
+
+    <div class="review-grid">
+
+        <!-- Review Card -->
+        <article class="review-card">
+
+            <div class="poster">
+                <img src="/IMAGES/mission-impossible-final-reckoning-poster_1080x1600px_Indoor_Vertical_Digital_Payoff_One_Sheet_v2.jpg" alt="Movie Poster">
+                <span class="score">8.9/10</span>
+            </div>
+
+            <div class="review-content">
+
+                <span class="category">Action • Adventure</span>
+
+                <h3>Mission Impossible: The Final Reckoning</h3>
+
+                <p>
+                    Ethan Hunt returns for one last mission packed with incredible
+                    action, emotional moments, and breathtaking stunts.
+                </p>
+
+                <div class="review-footer">
+                    <span>★★★★★</span>
+
+                    <a href="/WEBPAGES/Articles/2026/July/entertainment/reviews/moviereview3.html" class="read-btn">
+                        Read Review →
+                    </a>
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+<!---Header-->
+<div>
+<header>
+        <h3 class="logo">FEATURED NEWS</h3>
+        <p>Here are the top featured stories from around The Last Reporter.</p>
+</header>
+</div>
+
+<!----FEATURED NEWS-->
+<div class="Featured">
+  <div class="container center mt-5">
+    <img src="#" class="featured-card-img" alt="...">
+      <h5 class="card-title">Featured News</h5>
+      <p class="card-text">Mark Twain owner sets closure date after AG demands action</p>
+      <p><small>The City of St.Louis has demanded action today by calling for the closing of Mark Tawin Hotel
+        the troubled owner in downtown St.Louis said Friday that operations at the building will end by Sept.1, 2026....
+      </small></p>
+       <li><a href="/WEBPAGES/Articles/2026/July/featuredNews/article1.html"><p class="card-text">READ MORE...</p></a></li>
+     <p class="card-text"><small>Last updated 1 day ago</small></p>
+  </div>
+</div>
+
+
+
+
+
+
+
+<section class="featured">
+
+<div class="featured-image">
+    <img src="images/spiderman.jpg">
+</div>
+
+<div class="featured-text">
+
+    <span class="category">FEATURED</span>
+
+    <h2>North Korean Hackers strike again</h2>
+
+        <p>
+
+        A group known as "The Monkey Paw", has hacked into high ranking government officials 
+        in the United States. Reports states they may have been from the US Area 51 base.  
+
+        </p>
+
+     <a href="/WEBPAGES/Articles/2026/July/featuredNews/article2.html" class="promo-btn">
+    Read Story
+  </button>
+     </a>
+
+</div>
+
+</section>
+
+
+<!---TRENDING TOPIC /W LINKS-->
+<section class="trendng">
+  <h4>Topics</h4>
+  <p>Stay updated with the latest trending topics across the internet.</p>
+
+  <div class="news-list">
+    <a href="/WEBPAGES/Articles/2026/July/trending/article4.html" class="news-card">
+      <img src="#" alt="">
+      <div class="news-info">
+        <h3>2026 World Cup: How to watch all of today's games...</h3>
+        <p>July 12,2026</p>
+      </div>
+    </a>
+
+    <a href="/WEBPAGES/Articles/2026/July/trending/article5.html" class="news-card">
+      <img src="#" alt="">
+      <div class="new-info">
+        <h3>2 people killed in Toronto street festival shooting</h3>
+        <p>July 12,2026</p>
+      </div>
+    </a>
+
+    <a href="/WEBPAGES/Articles/2026/July/trending/article6.html" class="news-card">
+      <img src="#" alt="">
+      <div class="news-info">
+        <h3>Sen. Lindsey Granham dies at 71 after 'brief and sudden illness'</h3>
+        <p>July 12,2026</p>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<div class="poll-container">
+    <iframe
+        name="opinionstage-widget"
+        src="https://www.opinionstage.com/api/v2/widgets/2cdb2633-2dd4-4d5b-b74c-06996a029890/iframe?em=1"
+        data-opinionstage-iframe="2cdb2633-2dd4-4d5b-b74c-06996a029890"
+        width="100%"
+        height="500"
+        scrolling="auto"
+        frameborder="0"
+        allow="fullscreen"
+        webkitallowfullscreen="true"
+        mozallowfullscreen="true"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        style="border:none; box-shadow:0 0 12px rgba(0,0,0,0.25); border-radius:12px;">
+    </iframe>
+</div>
+
+<!----ADVERTISMENT-->
+
+
+<!-- Promotional Banner -->
+<section class="promo-banner">
+
+    <div class="promo-text">
+        <span class="promo-tag">Featured</span>
+
+        <h2>Discover Products You'll Love</h2>
+
+        <p>
+            Check out featured products, exclusive deals, and trusted brands
+            recommended by our team.
+        </p>
+
+        <a href="products.html" class="promo-btn">
+            Shop Now →
+        </a>
+    </div>
+
+    <div class="promo-image">
+        <img src="images/promo-product.png" alt="Featured Product">
+    </div>
+
+</section>
+
+<!----Footer Links-->
+<footer class="footer"> 
+  <div class="footer-container">
+
+    <!---Logo-->
+    <div class="footer-logo">
+      <img src="/IMAGES/the last reporter_LOGO.png" alt="Company Logo">
+    </div>
+
+    <!---Description-->
+    <div class="footer-about">
+      <p>
+        We have proudly served our customers forover 25 years,
+        providing professional news coverage and media coverage services.
+        Our experience team uses state-of-the-art equipment
+        restore your property quickly and safely.
+      </p>
+    </div>
+
+    <div class="footer-grid">
+
+      <!---Service-->
+      <div class="footer-column">
+        <h3>Services</h3>
+
+        <a href="#">Contact</a>
+        <a href="#">Jobs</a>
+        <a href="#">About Us</a>
+        <a href="#">Terms of Service</a>
+      </div>
+
+      <!---Locations-->
+      <div class="footer-column">
+      <h3>Location</h3>
+      <a href="#">St. Louis</a>
+    </div>
+
+    <!---Company-->
+    <div class="footer-column">
+    <h3>Company</h3>
+
+    <a href="#">About Us</a>
+    <a href="#">Gallery</a>
+    <a href="#">Reviews</a>
+    <a href="#">Contact</a>
+    <a href="#">Careers</a>
+  </div>
+
+  </div>
+
+ 
+
+  <!---Contact-->
+  <div class="footer-column">
+    <h3>Contact</h3>
+
+    <p>(314) 555-1234</p>
+    <p>info@thelastreporter.io</p>
+    <p>24/7 Emergency Services</p>
+  </div> 
+  
+  <div class="footer-bottom">
+
+    <p>
+      The Last ReporterTM. All Rights Reserved. 
+    </p>
+
+    <div class="socials">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-x"></i></a>
+    </div>
+  </div>
+</div>
+</footer>
+</body>
+</html>
